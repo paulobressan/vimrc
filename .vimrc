@@ -49,9 +49,19 @@ Plug 'matze/vim-move'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'honza/vim-snippets'
+Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 " Set theme Vim
 syntax on
-color dracula 
 
+set background=dark    " Setting dark mode
+
+nnoremap <silent> [oh :call gruvbox#hls_show()<CR>
+nnoremap <silent> ]oh :call gruvbox#hls_hide()<CR>
+nnoremap <silent> coh :call gruvbox#hls_toggle()<CR>
+
+nnoremap * :let @/ = ""<CR>:call gruvbox#hls_show()<CR>*
+nnoremap / :let @/ = ""<CR>:call gruvbox#hls_show()<CR>/
+nnoremap ? :let @/ = ""<CR>:call gruvbox#hls_show()<CR>?
+colorscheme gruvbox 
