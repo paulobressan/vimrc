@@ -53,5 +53,5 @@ call plug#end()
 
 " Set theme Vim
 syntax on
-color desert 
+color dracula 
 
